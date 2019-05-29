@@ -1,3 +1,6 @@
+class Gumball
+end
+
 class GumballMachineModel
     attr_reader :count
   def initialize(gumballCount: 0)
@@ -16,7 +19,8 @@ class GumballMachineModel
   end
 
   def refill(count)
-    @gumballCount += count
+    @gumballCount += count if count > 0
+    return @gumballCount
   end
 
 end

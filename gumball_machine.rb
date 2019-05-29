@@ -1,7 +1,4 @@
-require_relative "controllers/gumball_controller.rb"
-
-class Gumball
-end
+require_relative "controllers/gumball_controller"
 
 gumballMachineController = GumballMachineController.new
 gumballMachineController.run
